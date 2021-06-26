@@ -1,0 +1,82 @@
+.chat-container {
+    grid-area: chat;
+    position: absolute;
+    display: flex;
+    width: 500px;
+    min-height: 75vh;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 8px 0;
+}
+
+.chat-header {
+    height: minmax(5rem, auto);
+    text-align: center;
+    border-bottom: 1px solid black;
+    font-size: 24px;
+    background: white;
+}
+
+
+.chat-dialog-field {
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    margin: .5rem .5rem .5rem .5rem;
+    flex-grow: 5;
+}
+
+.chat-create-message-field {
+    display: flex;
+    height: 2.5rem;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin: .5rem;
+}
+
+.chat-message-input {
+    flex: 10 0 0;
+    text-align: right;
+    border-radius: 1rem;
+    outline: none;
+    border:none;
+    margin-right: 1rem;
+    background: transparent;
+}
+
+.iconed-btn{
+    flex: 1 0 0;
+    background: transparent;
+    border-radius: 50%;
+}
+
+.send-text-message-btn {
+
+}
+
+.send-voice-message-btn {
+
+}
+
+.user-message {
+    align-self: end;
+    text-align: right;
+    border-radius: 1rem 0 1rem 1rem;
+}
+
+.bot-message {
+    align-self: start;
+    text-align: left;
+    border-radius: 0 1rem 1rem 1rem;
+}
+
+.chat-message-field {
+    display: flex;
+    padding: 3px;
+    border: 1px solid black;
+    margin: .5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    background: white;
+}

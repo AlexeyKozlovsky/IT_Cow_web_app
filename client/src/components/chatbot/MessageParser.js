@@ -13,10 +13,10 @@ class MessageParser {
     parse = (message) => {
       const lowerCase = message.toLowerCase();
 
-    //   console.log(GET_SYMPT_URL_PREFIX+message)
-    //     axios.get(GET_SYMPT_URL_PREFIX+message, {headers: {'Access-Control-Allow-Origin': '*'}}).then(res => {
-    //         console.log(res)
-    //     })
+      console.log(GET_SYMPT_URL_PREFIX+message)
+        // axios.get(GET_SYMPT_URL_PREFIX+message).then(res => {
+        //     console.log(res)
+        // })
       
   
       if (

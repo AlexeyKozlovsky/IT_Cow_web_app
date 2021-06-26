@@ -18,14 +18,12 @@ import firebase from './../../firebase';
 
 const useStyles = makeStyles((theme) => ({
   rectangle: {
+    position: 'relative',
+    marginLeft: '25%',
     display: 'inline-block',
-    width: '100%',
+    width: '50%',
     height: '100%',
-    background: 'radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))',
-    opacity: 0.85,
-    alignSelf: 'center',
-    justifyContent: 'center',
-    alignItems: 'center'
+    background: 'radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1))',
 },
   paper: {
     marginTop: theme.spacing(8),
@@ -50,7 +48,6 @@ export default function RegisterPage() {
   const classes = useStyles();
 
   return (
-    <div className="page">
       <div>
       <div className={classes.rectangle}>
       <Container component="main" maxWidth="xs">
@@ -136,10 +133,6 @@ export default function RegisterPage() {
           </form>
         </div>
       </Container>
-    </div>
-      </div>
-       
-    </div>
-   
+    </div></div>
   );
 }

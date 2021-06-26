@@ -34,14 +34,10 @@ export default class DoctorsPage extends React.Component {
     render() {
         console.log(this.state.cardInfo)
         return (
-            <div>
                 <div className="grid" onLoad={() => console.log("LOADED")}>
                 { this.state.cardInfo.map( (card, index) => 
                     <MyCard2 title={card.type} img={card.image_id} desc={card.desc}/>)}
                 </div>
-            </div>
-            
-            
         ) 
     }
 }
